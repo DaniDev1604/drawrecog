@@ -26,11 +26,11 @@ def encode_image_to_base64(image_path):
 
 # Streamlit 
 st.set_page_config(page_title='Tablero Inteligente')
-st.title('Tablero Inteligente')
+st.title('Test psicologico')
 with st.sidebar:
     st.subheader("Acerca de:")
-    st.subheader("En esta aplicación veremos la capacidad que ahora tiene una máquina de interpretar un boceto")
-st.subheader("Dibuja el boceto en el panel  y presiona el botón para analizarla")
+    st.subheader("Este es el test psicologico HTP donde se analiza el subconsiente por medio de dibujos")
+st.subheader("Dibuja una casa, un arbol y una persona")
 
 # Add canvas component
 #bg_image = st.sidebar.file_uploader("Cargar Imagen:", type=["png", "jpg"])
@@ -83,7 +83,7 @@ if canvas_result.image_data is not None and api_key and analyze_button:
  
         base64_image = encode_image_to_base64("img.png")
             
-        prompt_text = (f"Describe in spanish briefly the image")
+        prompt_text = (f"Analize the image and give a brief psicological text based on the HTP technique")
     
       # Create the payload for the completion request
         messages = [
