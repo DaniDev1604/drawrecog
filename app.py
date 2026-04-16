@@ -103,7 +103,7 @@ if canvas_result.image_data is not None and api_key and analyze_button:
         try:
             full_response = ""
             message_placeholder = st.empty()
-            response = openai.chat.completions.create(
+            response = client.chat.completions.create(
               model= "gpt-4o-mini",  #o1-preview ,gpt-4o-mini
               messages=[
                 {
