@@ -83,7 +83,7 @@ if canvas_result.image_data is not None and api_key and analyze_button:
  
         base64_image = encode_image_to_base64("img.png")
             
-        prompt_text = (f"Analize the image and give a brief psicological text based on the HTP technique")
+        prompt_text = (f"Analize the image and give a brief psicological text in spanish based on the HTP technique and its take on the image")
     
       # Create the payload for the completion request
         messages = [
